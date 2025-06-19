@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multi-level Dropdown Navigation</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header id="navbar">
+        <div class="container">
+            <a href="#" class="logo">Welcome</a>
+            <button class="menu-toggle" aria-label="Toggle navigation">
+                <i class="fas fa-bars"></i>
+            </button>
+            <nav class="navbar-nav">
+                <ul>
+                    <li><a href="#section1">Home</a></li>
+                    <li class="dropdown">
+                        <a href="#">Products <i class="fas fa-chevron-down"></i></a>
+                        <ul class="dropdown-content">
+                            <li><a href="#">Category 1</a></li>
+                            <li class="has-submenu">
+                                <a href="#">Category 2 <i class="fas fa-chevron-right"></i></a>
+                                <ul class="dropdown-content">
+                                    <li><a href="#">Sub-Category A</a></li>
+                                    <li><a href="#">Sub-Category B</a></li>
+                                    <li><a href="#">Sub-Category C</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">Category 3</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#">Services <i class="fas fa-chevron-down"></i></a>
+                        <ul class="dropdown-content">
+                            <li><a href="#">Service A</a></li>
+                            <li class="has-submenu">
+                                <a href="#">Service B <i class="fas fa-chevron-right"></i></a>
+                                <ul class="dropdown-content">
+                                    <li><a href="#">Sub-Service X</a></li>
+                                    <li><a href="#">Sub-Service Y</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">Service C</a></li>
+                            <li><a href="#">Service D</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#section2">About Us</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="section1" class="hero-section">
+            <div class="container">
+                <h2>Welcome to Our Amazing Website</h2>
+                <p>This is the first section with relevant content. It's designed to introduce your theme and engage visitors.</p>
+                <button class="btn">Learn More</button>
+            </div>
+        </section>
+
+        <section id="section2" class="content-section">
+            <div class="container">
+                <h2>Explore Our Solutions</h2>
+                <p>This second section provides more detailed information about our offerings. We aim to deliver exceptional value and innovative solutions.</p>
+                <div class="features-grid">
+                    <div class="feature-item">
+                        <h3>Feature One</h3>
+                        <p>Detailed description of feature one, highlighting its benefits and how it solves a problem.</p>
+                    </div>
+                    <div class="feature-item">
+                        <h3>Feature Two</h3>
+                        <p>In-depth explanation of feature two, showcasing its unique aspects and advantages.</p>
+                    </div>
+                    <div class="feature-item">
+                        <h3>Feature Three</h3>
+                        <p>Comprehensive overview of feature three, emphasizing its impact and success stories.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy;  All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
